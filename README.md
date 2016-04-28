@@ -41,7 +41,7 @@ Installation
 
 [Download the VNC Server package from GitHub Releases](https://github.com/RealVNC/raspi-preview/releases/download/5.3.1.18206/VNC-Server-5.3.1-raspi-alpha1.deb), and install using `dpkg` or your favourite package manager. 
 
-e.g from the command line:
+e.g. from the command line:
 ```
 curl -O https://github.com/RealVNC/raspi-preview/releases/download/5.3.1.18206/VNC-Server-5.3.1-raspi-alpha1.deb
 sudo dpkg -i VNC-Server-5.3.1-raspi-alpha1.deb
