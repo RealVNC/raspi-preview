@@ -66,7 +66,7 @@ To run VNC Server in Service Mode:
 ```
 sudo systemctl start vncserver-x11-serviced.service
 ```
-To have VNC Server start automatically when you power the Pi on (Raspbian "Jessie"):
+To have VNC Server start automatically when you power the Pi on:
 ```
 sudo systemctl enable vncserver-x11-serviced.service
 ```
@@ -77,7 +77,7 @@ To run VNC Server in Service Mode:
 ```
 sudo /etc/init.d/vncserver-x11-serviced start
 ```
-To have VNC Server start automatically when you power the Pi on (Raspbian "Jessie"):
+To have VNC Server start automatically when you power the Pi on:
 ```
 sudo update-rc.d vncserver-x11-serviced defaults
 ```
