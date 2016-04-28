@@ -5,7 +5,7 @@ Thanks for your help testing the VNC for Raspberry Pi alpha! This build contains
 
 See the full release notes [here](#releaseNotes). 
 
-[![Pi Video Screenshot](https://dl.dropboxusercontent.com/u/1188395/Work/Screenshots/PiVideo.PNG)](https://www.youtube.com/watch?v=_iPfvICY08o&feature=youtu.be "Pi Video")
+[![Pi Video Screenshot](PiVideo.PNG)](https://www.youtube.com/watch?v=_iPfvICY08o&feature=youtu.be "Pi Video")
 
 *Click the above image to see Minecraft over VNC in action.*
 
@@ -47,7 +47,7 @@ Starting VNC Server
 
 You can run VNC Server in two modes: Service Mode and Virtual Mode. You can even run both at the same time. 
 
-![Stuff](https://dl.dropboxusercontent.com/u/1188395/Work/Screenshots/ServerModes.png)
+![Server Modes](ServerModes.png)
 
 Additional instructions, including how to connect a VNC Viewer device and how to stop VNC Server, are available [here](https://www.realvnc.com/products/vnc/raspberrypi/). 
 
@@ -71,7 +71,7 @@ To play Minecraft over VNC:
 3. Start and play Minecraft, as if you were sitting in front of the Pi. 
 5. When you finish playing, press F8 and uncheck **Relative Pointer Motion**. 
 
-![Minecraft VNC](https://dl.dropboxusercontent.com/u/1188395/Work/Screenshots/Screenshot1.PNG)
+![Minecraft VNC](Screenshot1.PNG)
 
 Running Kodi
 ============
@@ -85,7 +85,7 @@ To use Kodi over VNC:
 4. Use Kodi, as if you were sitting in front of the Pi. 
 5. When you finish using Kodi, exit in the usual way. Then press F8 and uncheck **Relative Pointer Motion**. 
 
-![KodiVNC](https://dl.dropboxusercontent.com/u/1188395/Work/Screenshots/KodiScreen.PNG)
+![KodiVNC](KodiScreen.PNG)
 
 <a name="knownIssues"></a>
 
