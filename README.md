@@ -43,7 +43,7 @@ Installation
 
 e.g. from the command line:
 ```
-curl -O https://github.com/RealVNC/raspi-preview/releases/download/5.3.1.18206/VNC-Server-5.3.1-raspi-alpha1.deb
+curl -OL https://github.com/RealVNC/raspi-preview/releases/download/5.3.1.18206/VNC-Server-5.3.1-raspi-alpha1.deb
 sudo dpkg -i VNC-Server-5.3.1-raspi-alpha1.deb
 ```
 
