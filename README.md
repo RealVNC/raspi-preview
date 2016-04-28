@@ -1,21 +1,21 @@
 VNC for Raspberry Pi alpha
 ==========================
 
-Thanks for your help testing the VNC for Raspberry Pi alpha! This build contains a whole host of improvements over our [stable release](https://www.realvnc.com/download/vnc/raspberrypi/), including Minecraft support, the ability to render the Pi's text console, and improved performance on all Pi models. 
+[![Minecraft Pi animated GIF](MinecraftPi.gif)](http://www.youtube.com/watch?v=nMhjg7GdRWY "Pi Video")
 
-See the full release notes [here](#releaseNotes). 
+*Click the above image for more video of Minecraft over VNC.*
 
-[![Pi Video Screenshot](PiVideo.PNG)](https://www.youtube.com/watch?v=_iPfvICY08o&feature=youtu.be "Pi Video")
+Thanks for your help testing the VNC for Raspberry Pi alpha! This build contains a whole host of improvements over our [stable  release](https://www.realvnc.com/download/vnc/raspberrypi/), including Minecraft support, the ability to render the Pi's text console, and improved performance on all Pi models. 
 
-*Click the above image to see Minecraft over VNC in action.*
+**Download alpha 1 now from [GitHub Releases](https://github.com/RealVNC/raspi-preview/releases/download/5.3.1.18206/VNC-Server-5.3.1-raspi-alpha1.deb)**
 
-The alpha is automatically licensed with a [Personal license](https://www.realvnc.com/products/vnc/#versions) when you install it on your Raspberry Pi* (but feel free to apply an Enterprise license key of your own for additional features).  
+The alpha is automatically licensed with a [Personal license](https://www.realvnc.com/products/vnc/#versions) when you install it on your Raspberry Pi (but feel free to apply an Enterprise license key of your own for additional features). The alpha license will expire at the end of Jan 2017.
 
 As this is an alpha test, you may notice some bugs. A list of [known issues](#knownIssues) and instructions for [leaving feedback](#leavingFeedback) are included at the end of this Readme.
 
 Don't forget you'll need [VNC Viewer](https://www.realvnc.com/download/viewer/) on the device you want to control your Pi from. 
 
-**This license does not cover the use of VNC in a commercial environment.*
+**Note:** You will need to [optimize VNC Viewer](#optimizingVncViewer) to get the best performance from this alpha.
 
 <a name="releaseNotes"></a>
 
@@ -35,21 +35,56 @@ Prerequisites
 - Ensure you are using your Pi's [recommended power supply](https://www.raspberrypi.org/help/faqs/#powerReqs). 
 - For optimal performance, increase your Pi's GPU allocation to at least 128mb (this is 64mb by default). You can do this by running ``sudo raspi-config`` in Terminal and selecting **Advanced options > Memory Split**. 
 
+
 Installation
 ============
 
-Download the VNC Server binary through GitHub. Navigate to ``<download-directory>`` and run ``sudo dpkg -i VNC-Server-5.3.1-Linux-ARM.deb``. You can then [start VNC Server](#startVnc) at the command line. 
+[Download the VNC Server package from GitHub Releases](https://github.com/RealVNC/raspi-preview/releases/download/5.3.1.18206/VNC-Server-5.3.1-raspi-alpha1.deb), and install using `dpkg` or your favourite package manager. 
+
+e.g from the command line:
+```
+curl -O https://github.com/RealVNC/raspi-preview/releases/download/5.3.1.18206/VNC-Server-5.3.1-raspi-alpha1.deb
+sudo dpkg -i VNC-Server-5.3.1-raspi-alpha1.deb
+```
+
+You can then [start VNC Server](#startVnc) at the command line. 
+
+You can use the [latest VNC Viewer for your platform](http://www.realvnc.com/download/viewer/), although you may need to [optimize the configuration](#optimizingVncViewer).
 
 <a name="startVnc"></a>
 
 Starting VNC Server
 ===================
 
-You can run VNC Server in two modes: Service Mode and Virtual Mode. You can even run both at the same time. 
+You can run VNC Server in two modes: Service Mode and Virtual Mode. You can even run both at the same time. For more information, see [here](https://www.realvnc.com/products/vnc/raspberrypi/). 
 
-![Server Modes](ServerModes.png)
+**Note:** Only Service Mode will be able to capture Minecraft and similar applications.
+
+Raspbian "Jessie"
+-----------------
+To run VNC Server in Service Mode:
+```
+sudo systemctl start vncserver-x11-serviced.service
+```
+To have VNC Server start automatically when you power the Pi on (Raspbian "Jessie"):
+```
+sudo systemctl enable vncserver-x11-serviced.service
+```
+
+Raspbian "Wheezy"
+-----------------
+To run VNC Server in Service Mode:
+```
+sudo /etc/init.d/vncserver-x11-serviced start
+```
+To have VNC Server start automatically when you power the Pi on (Raspbian "Jessie"):
+```
+sudo update-rc.d vncserver-x11-serviced defaults
+```
 
 Additional instructions, including how to connect a VNC Viewer device and how to stop VNC Server, are available [here](https://www.realvnc.com/products/vnc/raspberrypi/). 
+
+<a name="optimizingVncViewer"></a>
 
 Optimizing VNC Viewer for the Raspberry Pi
 ==========================================
