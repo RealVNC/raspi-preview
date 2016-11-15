@@ -3,7 +3,7 @@ Stable version now available
 
 Thank you to everyone who tried the VNC for Raspberry Pi alpha version!
 
-There is now a [stable version](https://www.realvnc.com/download/vnc/raspberrypi/) of RealVNC Server for Raspberry pi available on our Website, which incoroprates the improvements that were made in this alpha version, so we highly recommend that you upgrade to this.
+There is now a [stable version](https://www.realvnc.com/download/vnc/raspberrypi/) of RealVNC Server for Raspberry Pi available on our Website, which incoroprates the improvements that were made in this alpha version, so we highly recommend that you upgrade to this.
 
 The RealVNC Server and Viewer is now also included by default in the **Raspbian Jessie with PIXEL** distribution (2016-09-23 onwards), availble from the [Raspberry Pi Foundation's download page](https://www.raspberrypi.org/downloads/raspbian/).
 
