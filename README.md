@@ -1,3 +1,14 @@
+Stable version now available
+============================
+
+Thank you to everyone who tried the VNC for Raspberry Pi alpha version!
+
+There is now a [stable version](https://www.realvnc.com/download/vnc/raspberrypi/) of RealVNC Server for Raspberry pi available on our Website, which incoroprates the improvements that were made in this alpha version, so we highly recommend that you upgrade to this.
+
+The RealVNC Server and Viewer is now also included by default in the **Raspbian Jessie with PIXEL** distribution (2016-09-23 onwards), availble from the [Raspberry Pi Foundation's download page](https://www.raspberrypi.org/downloads/raspbian/).
+
+---
+
 VNC for Raspberry Pi alpha
 ==========================
 
@@ -5,7 +16,7 @@ VNC for Raspberry Pi alpha
 
 *Click the above image for more video of Minecraft over VNC.*
 
-Thanks for your help testing the VNC for Raspberry Pi alpha! This build contains a whole host of improvements over our [stable  release](https://www.realvnc.com/download/vnc/raspberrypi/), including Minecraft support, the ability to render the Pi's text console, and improved performance on all Pi models. 
+Thanks for your help testing the VNC for Raspberry Pi alpha! This build contains a whole host of improvements over our 5.2 release, including Minecraft support, the ability to render the Pi's text console, and improved performance on all Pi models. 
 
 **Download alpha 1 now from [GitHub Releases](https://github.com/RealVNC/raspi-preview/releases/download/5.3.1.18206/VNC-Server-5.3.1-raspi-alpha1.deb)**
 
